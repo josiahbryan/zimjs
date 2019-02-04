@@ -1,4 +1,13 @@
 {
+  "name": "zimjs",
+  "npmName": "zimjs",
+  "version": "9.5.0",
+  "description": "ZIM JavaScript Canvas Framework - Code Creativity! Interactive Media Libraries",
+  "url": "http://www.zimjs.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josiahbryan/zimjs.git"
+  },
   "private": true,
   "scripts": {
     "start": "webpack-serve",
