@@ -2,6 +2,14 @@
 // Also see https://zimjs.com/distill to minify only the functions in your app
 // free to use - donations welcome of course! https://zimjs.com/donate
 
+var createjs = this.createjs;
+try {
+	// https://www.npmjs.com/package/createjs
+	require('createjs');
+	createjs = this.createjs;
+} catch(e) {
+	console.warn("Error loading createjs:", e);
+}
 
 ////////////////  ZIM WRAP  //////////////
 
@@ -39442,4 +39450,5 @@ dispose() - clear any event listeners, etc.
 
 	return zim;
 } (zim || {});
+if (module) module.exports = zim;
 if (!window.zns) zimplify();
