@@ -1,4 +1,2 @@
-var createjs = this.createjs;
-try {
-	createjs = require('@neoli/createjs');
-} catch(e) {}
+const zim = require('./zim.js');
+module.exports = zim;

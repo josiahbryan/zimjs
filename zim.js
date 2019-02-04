@@ -39451,4 +39451,4 @@ dispose() - clear any event listeners, etc.
 	return zim;
 } (zim || {});
 if (module) module.exports = zim;
-if (!window.zns) zimplify();
+else if (!window.zns) zimplify();
